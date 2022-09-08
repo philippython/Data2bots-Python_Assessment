@@ -1,0 +1,18 @@
+{   "key_one": {
+    "type": "string",
+    "tag": "",
+    "description": "",
+    "required": false},
+
+    "key_two": {
+    "type": "string",
+    "tag": "",
+    "description": "",
+    "required": false},
+
+    "key_three": {
+    "type": "string",
+    "tag": "",
+    "description": "",
+    "required": false}
+}
