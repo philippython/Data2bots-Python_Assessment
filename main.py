@@ -19,23 +19,32 @@ def value__mapper(input__filepath, output__filepath) -> str:
             message_attrs = data.get("message", {})
             output = {}
             attr_num = 0
-            # iterates over attributes of message keys checking for data type.
-            for attr, value in message_attrs.items():
-                # attr_num is used to keep track of current iteration
-                attr_num += 1
-                output[f"key_{num_to_words[attr_num]}"] = {"type": type_checker(value),
-                                                            "tag": "",
-                                                            "description": "",
-                                                            "required": False
-                                                        }
-            # creates json to be dumped in the output__filepath
-            output_dataset = json.dumps(output, indent=4)
-            # writes to the output__filepath
-            with open(output__filepath,'w') as output_data:
-                output_data.write(output_dataset)
-            
+            #  checks if json is empty
+            if message_attrs != {}:
+                # iterates over attributes of message keys checking for data type.
+                for attr, value in message_attrs.items():
+                    # attr_num is used to keep track of current iteration
+                    attr_num += 1
+                    output[f"key_{num_to_words[attr_num]}"] = {"type": type_checker(value),
+                                                                "tag": "",
+                                                                "description": "",
+                                                                "required": False
+                                                            }
+                # creates json to be dumped in the output__filepath
+                output_dataset = json.dumps(output, indent=4)
+                # writes to the output__filepath
+                with open(output__filepath,'w') as output_data:
+                    output_data.write(output_dataset)
+    else:
+        return {}
 
 value__mapper('data/data_2.json', "schema/schema_2.json")
 
+"""
+value__mapper('data/data_2.json', "schema/schema_2.json")
+
+the function above would sniff json at data/data_2.json and dump json to schema/schema_2.json
+"""
 
 
+ 

@@ -1,0 +1,23 @@
+{
+  "attributes": {
+    "appName": "ABCDEFG",
+    "eventType": "ABCDEFGHIJ",
+    "subEventType": "ABCDEFGHIJKLMNOPQRSTU",
+    "sensitive": true
+  },
+  "message": {
+    "battle": "ABCDEFGHIJKLMNOPQRSTU",
+    "time": 450000,
+    "random": [67, "ABCDEFGHIJKLMNOPQRSTU", "ABCDEFGHIJ"],
+    "valid": ["a", "b", "c", "d", "ABCDEFGHIJKLMNOPQRSTU", "ABCDEFGHIJ"],
+    "terra": {
+      "id": "ABCDEFGHIJKLMNOPQRSTUVWXYZA",
+      "nickname": "ABCDEFGHIJKLMNOPQ",
+      "title": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+      "accountType": "ABCDE",
+      "countryCode": "ABCD",
+      "orientation": "ABCDEFGHIJKLMNO"
+    },
+    "budget": false
+  }
+}
