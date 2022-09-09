@@ -1,0 +1,38 @@
+{
+    "key_one": {
+        "type": "array",
+        "tag": "",
+        "description": "",
+        "required": false
+    },
+    "key_two": {
+        "type": "integer",
+        "tag": "",
+        "description": "",
+        "required": false
+    },
+    "key_three": {
+        "type": null,
+        "tag": "",
+        "description": "",
+        "required": false
+    },
+    "key_four": {
+        "type": null,
+        "tag": "",
+        "description": "",
+        "required": false
+    },
+    "key_five": {
+        "type": "enum",
+        "tag": "",
+        "description": "",
+        "required": false
+    },
+    "key_six": {
+        "type": null,
+        "tag": "",
+        "description": "",
+        "required": false
+    }
+}
